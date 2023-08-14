@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>grove street</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <header>
+            <div class="logo">
+                <h1>grove street</h1>
+                <h4>A sua moda urbana</h4>
+            </div>
+            <div class="cabecalho-link">
+                <ul class="links">
+                    <li>
+                        <a href="#">Início</a>
+                    </li>
+                    <li>
+                        <a href="#">Destaques</a>
+                    </li>
+                    <li>
+                        <a href="#">Novo</a>
+                    </li>
+                    <li>
+                        <a href="#">Contato</a>
+                    </li>
+                    <div class="icon-cart">
+                        <span><ion-icon name="bag-outline" class="open" onclick="openModal()"></ion-icon></span>
+                    </div>
+                </ul>
+            </div>
+        </header>
+
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal()">&times;</span>
+                <h2>Meu Carrinho</h2>
+                <p>Seu carrinho está vazio</p>
+                <div class="compras">
+                    <div class="product-checkout">
+                        <img src="./assets/camisa1.jpg" alt="">
+                        <p>R$ 95,00</p>
+                        <div id="contador">0</div>
+                        <button class="adicionar">Adicionar</button>
+                        <button class="remover">Remover</button>
+                    </div>
+                    <div class="product-checkout">
+                        <img src="./assets/camiseta2.jpg" alt="">
+                        <p>R$ 120,00</p>
+                        <div id="contador">0</div>
+                        <button class="adicionar">Adicionar</button>
+                        <button class="remover">Remover</button>
+                    </div>
+                </div>
+                <div class="foot">
+                    <h3>Total</h3>
+                    <h3 id="total">$ 0.00</h3>
+                    <ul id="cart-items">
+
+                    </ul>
+                </div>
+                <button class="checkout" onclick="checkout()">Finalizar Compra</button>
+            </div>
+        </div>
+
+        <section class="main-view">
+            <div class="main-view-box">
+                <h1>NOVOS MODELOS</h1>
+                <h1>PARA HOMENS</h1>
+                <p>Novos modelos disponíveis, na melhor moda urbana </p>
+            </div>
+        </section>
+
+        <section class="categories">
+            <h1>Nova Coleção</h1>
+            <div class="container-products">
+                <div class="product">
+                    <img src="./assets/camisa1.jpg" alt="">
+                    <p>R$ 95,00</p>
+                    <button>Adicionar ao carrinho</button>
+                </div>
+                <div class="product">
+                    <img src="./assets/camiseta2.jpg" alt="">
+                    <p>R$ 120,00</p>
+                    <button>Adicionar ao carrinho</button>
+                </div>
+                <div class="product">
+                    <img src="./assets/camiseta3.jpg" alt="">
+                    <p>R$ 100,00</p>
+                    <button>Adicionar ao carrinho </button>
+                </div>
+                <div class="product">
+                    <img src="./assets/camiseta4.jpg" alt="">
+                    <p>R$ 150,99</p>
+                    <button>Adicionar ao carrinho</button>
+                </div>
+                <div class="product">
+                    <img src="./assets/camiseta5.jpg" alt="">
+                    <p>R$ 99,00</p>
+                    <button>Adicionar ao carrinho</button>
+                </div>
+                <div class="product">
+                    <img src="./assets/camiseta6.jpg" alt="">
+                    <p>R$ 50,00</p>
+                    <button>Adicionar ao carrinho</button>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div class="container-footer">
+                <p>Tel: 00 0000-0000</p>
+                <p>Email: grovestreet@email.com</p>
+                &copy; 2023 - Todos os direitos reservados
+            </div>
+        </footer>
+    </div>
+
+    <script src="./script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
