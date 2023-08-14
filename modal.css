@@ -1,0 +1,106 @@
+/*Modal*/
+
+.modal {
+    display: none;
+    position: fixed;
+    right: 0;
+    top: 90px;
+    bottom: 0;
+    width: 300px;
+    background-color: #ffffff;
+    z-index: 9999;
+    padding: 20px;
+    box-sizing: border-box;
+    overflow-y: auto;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 32px;
+    font-weight: bold;
+    color: #000;
+    cursor: pointer;
+
+}
+
+.modal h2 {
+    background-color: #151515;
+    text-align: center;
+    color: white;
+    width: 180px;
+    padding: 5px;
+}
+
+.modal p {
+    margin-top: 20px;
+}
+
+.foot {
+    display: flex;
+    justify-content: space-between;
+    margin: 5px 0;
+    padding: 10px 0;
+    border-top: 1px solid #3333;
+}
+
+.checkout {
+    border: none;
+    background-color: #a1a1a1;
+    color: rgb(0, 0, 0);
+    padding: 10px;
+    font-size: 14px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 500;
+    margin-top: 16px;
+}
+
+.checkout:hover {
+    opacity: .7;
+    transition: 0.2s;
+}
+
+.product-checkout {
+    margin-bottom: 20px;
+    list-style: none;
+}
+
+.product-checkout img {
+    width: 100px;
+}
+
+.checkout-control {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.contador {
+    width: 32px;
+    margin-top: 20px;
+    border: 1px solid #a1a1a1;
+    outline: none;
+    border-radius: 5px;
+}
+
+.product-checkout button {
+    color: rgb(255, 255, 255);
+    background-color: #fd0000;
+    height: 28px;
+    padding: 0 3px;
+    margin-top: 10px;
+    border: 1px solid rgb(128, 56, 56);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.product-checkout button:hover {
+    opacity: .7;
+}
+
+.checkout {
+    background-color: #037e22;
+    color: #ffffff;
+}

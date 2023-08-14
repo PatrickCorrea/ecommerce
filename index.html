@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="modal.css">
     <title>grove street</title>
 </head>
 
@@ -43,28 +44,27 @@
                 <span class="close" onclick="closeModal()">&times;</span>
                 <h2>Meu Carrinho</h2>
                 <p>Seu carrinho está vazio</p>
-                <div class="compras">
-                    <div class="product-checkout">
+                <ul class="compras">
+                    <li class="product-checkout">
                         <img src="./assets/camisa1.jpg" alt="">
-                        <p>R$ 95,00</p>
-                        <div id="contador">0</div>
-                        <button class="adicionar">Adicionar</button>
-                        <button class="remover">Remover</button>
-                    </div>
-                    <div class="product-checkout">
+                        <div class="checkout-control">
+                            <p>R$ 95,00</p>
+                            <input type="number" value="1" min="0" class="contador">
+                            <button class="remove-product">Remover item</button>
+                        </div>
+                    </li>
+                    <li class="product-checkout">
                         <img src="./assets/camiseta2.jpg" alt="">
-                        <p>R$ 120,00</p>
-                        <div id="contador">0</div>
-                        <button class="adicionar">Adicionar</button>
-                        <button class="remover">Remover</button>
-                    </div>
-                </div>
+                        <div class="checkout-control">
+                            <p>R$ 120,00</p>
+                            <input type="number" value="1" min="0" class="contador">
+                            <button class="remove-product">Remover item</button>
+                        </div>
+                    </li>
+                </ul>
                 <div class="foot">
                     <h3>Total</h3>
                     <h3 id="total">$ 0.00</h3>
-                    <ul id="cart-items">
-
-                    </ul>
                 </div>
                 <button class="checkout" onclick="checkout()">Finalizar Compra</button>
             </div>
@@ -82,32 +82,32 @@
             <h1>Nova Coleção</h1>
             <div class="container-products">
                 <div class="product">
-                    <img src="./assets/camisa1.jpg" alt="">
+                    <img src="./assets/camisa1.jpg" alt="product">
                     <p>R$ 95,00</p>
                     <button>Adicionar ao carrinho</button>
                 </div>
                 <div class="product">
-                    <img src="./assets/camiseta2.jpg" alt="">
+                    <img src="./assets/camiseta2.jpg" alt="product">
                     <p>R$ 120,00</p>
                     <button>Adicionar ao carrinho</button>
                 </div>
                 <div class="product">
-                    <img src="./assets/camiseta3.jpg" alt="">
+                    <img src="./assets/camiseta3.jpg" alt="product">
                     <p>R$ 100,00</p>
                     <button>Adicionar ao carrinho </button>
                 </div>
                 <div class="product">
-                    <img src="./assets/camiseta4.jpg" alt="">
+                    <img src="./assets/camiseta4.jpg" alt="product">
                     <p>R$ 150,99</p>
                     <button>Adicionar ao carrinho</button>
                 </div>
                 <div class="product">
-                    <img src="./assets/camiseta5.jpg" alt="">
+                    <img src="./assets/camiseta5.jpg" alt="product">
                     <p>R$ 99,00</p>
                     <button>Adicionar ao carrinho</button>
                 </div>
                 <div class="product">
-                    <img src="./assets/camiseta6.jpg" alt="">
+                    <img src="./assets/camiseta6.jpg" alt="product">
                     <p>R$ 50,00</p>
                     <button>Adicionar ao carrinho</button>
                 </div>
